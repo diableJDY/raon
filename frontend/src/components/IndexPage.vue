@@ -1,6 +1,6 @@
 <template>
   <div class="movies">
-    <h1>backend 에서 데이터 가져오기</h1>
+    <h1>backend 에서 데이터 가져오기 업데이트</h1>
     <div v-for="movie in movies" class="movie">
       <img v-bind:src="movie.poster" class="poster">
       <div>
