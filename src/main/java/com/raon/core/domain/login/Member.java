@@ -18,5 +18,8 @@ public class Member extends CommonVo {
     @Column(name = "Id")
     private Long id;
 
+    @Column(name = "name")
+    private String name;
+
 
 }
