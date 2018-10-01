@@ -63,7 +63,11 @@ public class MainCoreController {
     }*/
 
 
-
+    @RequestMapping("/error")
+    @ResponseBody
+    public String mains(){
+        throw new RuntimeException("test exception");
+    }
 
 
 }
