@@ -48,6 +48,13 @@ public class MainCoreController {
     }
 
 
+    @RequestMapping("/login")
+    @ResponseBody
+    public String login(){
+        return "login";
+    }
+
+
 
     /*@RequestMapping("/api")
     @ResponseBody
