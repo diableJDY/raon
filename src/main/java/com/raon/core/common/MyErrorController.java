@@ -1,4 +1,4 @@
-package com.raon.core.controller;
+package com.raon.core.common;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
