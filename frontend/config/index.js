@@ -11,13 +11,6 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
-        target: 'http://localhost:8739/api',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/api': ''
-        }
-      }
     },
 
     // Various Dev Server settings
@@ -57,10 +50,10 @@ module.exports = {
 
     // Paths
     //assetsRoot: path.resolve(__dirname, '../dist'),raon\src\main\resources
-    index: path.resolve(__dirname, '../../src/main/resources/static/index.html'),
+    index: path.resolve(__dirname, '../../src/main/resources/templates/index.html'),
     assetsRoot: path.resolve(__dirname, '../../src/main/resources/static'),
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsSubDirectory: '',
+    assetsPublicPath: '/static',
 
     /**
      * Source Maps

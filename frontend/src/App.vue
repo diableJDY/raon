@@ -1,14 +1,22 @@
 <template>
-  <div id="app">
+  <section id="app-container">
+  <Xheader></Xheader>
+    <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
+import Xheader from './components/header'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Xheader
+  }
 }
+
 </script>
 
 <style>
@@ -19,5 +27,13 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#app-container{
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  overflow:hidden;
 }
 </style>

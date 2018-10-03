@@ -11,9 +11,20 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+/*new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { App , Xheader},
   template: '<App/>'
-})
+},/!*{
+  el: '#xheader',
+  router,
+  components: { Xheader },
+  template: '<Xheader/>'
+  }*!/
+)*/
+
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app')

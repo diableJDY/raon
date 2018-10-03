@@ -13,17 +13,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/api")
-public class MainCoreController {
+public class MainCoreController  {
 
     @Autowired
     MainService mainService;
-
-    @RequestMapping("/")
-    @ResponseBody
-    public String index(){
-        return "Start";
-    }
-
 
     @RequestMapping("/movies")
     @ResponseBody
@@ -47,6 +40,7 @@ public class MainCoreController {
 
     }
 
+/*
 
     @RequestMapping("/login")
     @ResponseBody
@@ -54,6 +48,7 @@ public class MainCoreController {
         return "login";
     }
 
+*/
 
 
     /*@RequestMapping("/api")
@@ -62,12 +57,12 @@ public class MainCoreController {
         return "Start";
     }*/
 
-
+/*
     @RequestMapping("/error")
     @ResponseBody
     public String mains(){
         throw new RuntimeException("test exception");
-    }
+    }*/
 
 
 }
