@@ -3,8 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './vuex/store'
 import axios from 'axios'
+import 'es6-promise/auto'
+import Vuex from 'vuex'
+
 Vue.prototype.$http = axios
+
+Vue.use(Vuex)
 
 
 
@@ -25,6 +31,7 @@ Vue.config.productionTip = false
 )*/
 
 new Vue({
+  store,
   router,
   render: h => h(App)
 }).$mount('#app')

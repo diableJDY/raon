@@ -11,6 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+      '/loginAuth': {
+        target: 'http://localhost:8739/loginAuth',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/loginAuth': ''
+        }
+      }
     },
 
     // Various Dev Server settings

@@ -36,18 +36,30 @@
 <script>
   export default {
     created() {
-      // this.$http.get('/api/login')
-      //   .then((response) => {
-      //
-      //     this.login = response.data
-      //     console.log(this.login);
-      //   })
+
     },
     data() {
       return {
         login: []
         , data: '안녕 로그인'
         , ck: false
+      }
+    },
+    /*methods : {
+      authenticate (){
+        this.$store.dispatch('LOGIN', { email: this.email, password: this.password })
+          .then(() => this.$router.push('/'))
+      }
+    }*/
+    methods: {
+      authenticate: function () {
+        this.$store.dispatch({
+          type: 'LOGIN',
+          email: this.email,
+          password: this.password
+        }).then(() => {
+          this.$router.push({name: this.role}) // don't worry about this
+        }).catch(err => console.log(err)) // don't worry about this
       }
     }
   }
