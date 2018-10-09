@@ -58,9 +58,9 @@ module.exports = {
     // Paths
     //assetsRoot: path.resolve(__dirname, '../dist'),raon\src\main\resources
     index: path.resolve(__dirname, '../../src/main/resources/templates/index.html'),
-    assetsRoot: path.resolve(__dirname, '../../src/main/resources/static'),
-    assetsSubDirectory: '',
-    assetsPublicPath: '/static',
+    assetsRoot: path.resolve(__dirname, '../../src/main/resources/'),
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
 
     /**
      * Source Maps

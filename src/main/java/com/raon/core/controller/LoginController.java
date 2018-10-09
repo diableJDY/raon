@@ -13,17 +13,17 @@ import java.util.Map;
 public class LoginController implements ErrorController {
 
 
-    @RequestMapping({"/","/error"})
-    @ResponseBody
+    @RequestMapping({"/aa","/error"})
+//    @ResponseBody
     public String index(){
         return "index";
     }
 
 
-    @RequestMapping("/loginAuth")
-    @ResponseBody
-    public String login(@RequestBody Map map) {
-        return "logina";
+    @RequestMapping("/login")
+//    @ResponseBody
+    public String login() {
+        return "login";
     }
 
     @Override

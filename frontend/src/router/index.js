@@ -1,7 +1,7 @@
 import Vue from 'vue'
 
 import Router from 'vue-router'
-import Index from '../components/IndexPage'
+import IndexPage from '../components/IndexPage'
 import Show from '../components/ShowPage'
 import Login from '../components/Login'
 
@@ -15,12 +15,12 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: Index
+      component: IndexPage
     },
     {
       path: '/movie',
       name: 'index',
-      component: Index
+      component: IndexPage
     },
     {
       path: '/movie/:id',

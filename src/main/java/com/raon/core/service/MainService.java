@@ -25,7 +25,7 @@ public class MainService {
 
         }
 
-        Member ss = memberRepository.getOne(saveMember.getId());
+        Member ss = memberRepository.getOne(saveMember.getIdx());
         return ss;
     }
 }

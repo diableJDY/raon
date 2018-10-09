@@ -15,11 +15,32 @@ public class Member extends CommonVo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
-    private Long id;
+    @Column(name = "Idx")
+    private Long idx;
 
     @Column(name = "name")
     private String name;
 
+    @Column(name = "id")
+    private String id;
 
+    @Column(name = "pw")
+    private String pw;
+
+    @Column(name = "email")
+    private String email;
+
+    @Column(name = "cellphone")
+    private String cellphone;
+
+    public Member() {}
+    public Member(String id, String pw) {
+        this.id = id;
+        this.pw = pw;
+    }
+
+    @Override
+    public String toString() {
+        return new StringBuilder("{ idx : ").append(idx).append(", id : ").append(id).append(", name : ").append(name).append(", email : ").append(email).append(", cellphone : ").append(cellphone).append(" }").toString();
+    }
 }
