@@ -3,6 +3,7 @@ import com.raon.core.domain.CommonVo;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.validator.constraints.UniqueElements;
 
 import javax.persistence.*;
 
